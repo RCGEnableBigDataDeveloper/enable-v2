@@ -1,0 +1,12 @@
+TotalLoad
+CapacityTotalGB
+UnderReplicatedBlocks
+CapacityRemainingGB
+PendingDeletionBlocks
+PendingReplicationBlocks
+CorruptBlocks
+CapacityUsedGB
+numLiveDataNodes
+numDeadDataNodes
+MissingBlocks
+LiveDataNodes

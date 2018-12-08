@@ -1,0 +1,1 @@
+{ "path": "%s", "type": "%s", "bucket": null, "name": "%s", "description": "%s" }

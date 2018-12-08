@@ -1,0 +1,468 @@
+body {
+	background: #fff;
+	color: #333666;
+	margin: 0px;
+}
+
+section {
+	text-align: center;
+	margin: 0px;
+	background-image: url('/img/grid.gif');
+}
+
+.panzoom-parent {
+	border: 2px solid #333;
+}
+
+.panzoom-parent .panzoom {
+	border: 2px dashed #666;
+}
+
+.buttons {
+	margin: 0px;
+	padding: 0 0 1px 0;
+}
+
+.stats {
+	background: #a7cfdf; /* Old browsers */
+	background: -moz-linear-gradient(top, #a7cfdf 0%, #23538a 100%);
+	background: -webkit-linear-gradient(top, #a7cfdf 0%, #23538a 100%);
+	background: linear-gradient(to bottom, #a7cfdf 0%, #23538a 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a7cfdf',
+		endColorstr='#23538a', GradientType=0);
+	float: left;
+	width: 60px;
+	height: 48px;
+	color: #fff;
+}
+
+.navheader {
+	/* border: 1px solid #797979; */
+	background: rgba(255, 255, 255, 1);
+	background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%,
+		rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255, 255,
+		255, 1)), color-stop(47%, rgba(246, 246, 246, 1)),
+		color-stop(100%, rgba(237, 237, 237, 1)));
+	background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%,
+		rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+	background: -o-linear-gradient(top, rgba(255, 255, 255, 1) 0%,
+		rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+	background: -ms-linear-gradient(top, rgba(255, 255, 255, 1) 0%,
+		rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+	background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%,
+		rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff',
+		endColorstr='#ededed', GradientType=0);
+}
+
+@font-face {
+	font-family: Roboto Bold Condensed;
+	src: url(../../css/fonts/GOTHIC.TTF);
+}
+
+@font-face {
+	font-family: Roboto Condensed;
+	src: url(../../css/fonts/GOTHIC.TTF);
+}
+
+.enableheader {
+	font-family: Roboto Condensed;
+}
+
+a.ex1:hover, a.ex1:active, a.ex1:visited {
+	font-family: Roboto Condensed;
+	color: #fff;
+	padding-top: 5px;
+	text-decoration: none;
+}
+
+#generaltable_wrapper {
+	text-align: left;
+	margin: 0px;
+	padding: 0px;
+	width: 100%
+}
+
+.glow {
+	/* 	color: #797979; */
+	border: 1px solid #797979;
+	background: rgba(255, 255, 255, 1);
+	background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%,
+		rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255, 255,
+		255, 1)), color-stop(47%, rgba(246, 246, 246, 1)),
+		color-stop(100%, rgba(237, 237, 237, 1)));
+	background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%,
+		rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+	background: -o-linear-gradient(top, rgba(255, 255, 255, 1) 0%,
+		rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+	background: -ms-linear-gradient(top, rgba(255, 255, 255, 1) 0%,
+		rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+	background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%,
+		rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff',
+		endColorstr='#ededed', GradientType=0);
+	-webkit-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px
+		rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+	-moz-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px
+		rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+	box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px
+		rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+	background: rgba(255, 255, 255, 1);
+}
+
+.demo {
+	/* for IE10+ touch devices */
+	touch-action: none;
+}
+
+.w {
+	padding: 16px;
+	position: absolute;
+	z-index: 4;
+	border: 1px solid #2e6f9a;
+	box-shadow: 2px 2px 19px #e0e0e0;
+	-o-box-shadow: 2px 2px 19px #e0e0e0;
+	-webkit-box-shadow: 2px 2px 19px #e0e0e0;
+	-moz-box-shadow: 2px 2px 19px #e0e0e0;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	opacity: 0.8;
+	cursor: move;
+	background-color: white;
+	font-size: 11px;
+	-webkit-transition: background-color 0.25s ease-in;
+	-moz-transition: background-color 0.25s ease-in;
+	transition: background-color 0.25s ease-in;
+}
+
+.w:hover {
+	/*  background-color: #5c96bc; */
+	/* color: #797979; */
+	border: 1px solid #797979;
+	background: rgba(255, 255, 255, 1);
+	background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%,
+		rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255, 255,
+		255, 1)), color-stop(47%, rgba(246, 246, 246, 1)),
+		color-stop(100%, rgba(237, 237, 237, 1)));
+	background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%,
+		rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+	background: -o-linear-gradient(top, rgba(255, 255, 255, 1) 0%,
+		rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+	background: -ms-linear-gradient(top, rgba(255, 255, 255, 1) 0%,
+		rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+	background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%,
+		rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff',
+		endColorstr='#ededed', GradientType=0);
+	-webkit-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px
+		rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+	-moz-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px
+		rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+	box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px
+		rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+	background: rgba(255, 255, 255, 1);
+}
+
+.aLabel {
+	-webkit-transition: background-color 0.25s ease-in;
+	-moz-transition: background-color 0.25s ease-in;
+	transition: background-color 0.25s ease-in;
+}
+
+.aLabel.jtk-hover, .jtk-source-hover, .jtk-target-hover {
+	/* background-color: #1e8151; */
+	color: #797979;
+}
+
+.aLabel {
+	background-color: white;
+	opacity: 0.8;
+	padding: 0.3em;
+	border-radius: 0.5em;
+	border: 1px solid #346789;
+	cursor: pointer;
+}
+
+.ep {
+	position: absolute;
+	bottom: 37%;
+	right: 5px;
+	width: 1em;
+	height: 1em;
+	/*     background-color: #797979; */
+	background-color: #fff;
+	cursor: pointer;
+	box-shadow: 0 0 2px black;
+	-webkit-transition: -webkit-box-shadow 0.25s ease-in;
+	-moz-transition: -moz-box-shadow 0.25s ease-in;
+	transition: box-shadow 0.25s ease-in;
+}
+
+.ep:hover {
+	box-shadow: 0 0 6px black;
+}
+
+.statemachine-demo .jtk-endpoint {
+	z-index: 3;
+}
+
+#opened {
+	left: 10em;
+	top: 5em;
+}
+
+#phone1 {
+	left: 35em;
+	top: 12em;
+	width: 7em;
+}
+
+#inperson {
+	left: 12em;
+	top: 23em;
+}
+
+#phone2 {
+	left: 28em;
+	top: 24em;
+}
+
+#rejected {
+	left: 10em;
+	top: 35em;
+}
+
+.dragHover {
+	border: 1px solid #797979;
+}
+
+path, .jtk-endpoint {
+	cursor: pointer;
+}
+
+.small {
+	font-size: 11px;
+}
+
+.drawer {
+	position: absolute;
+	z-index: 10;
+	top: 0;
+	left: 0;
+	height: 100%;
+	padding: .4em 0;
+	background: #7D294E;
+	color: white;
+	text-align: center;
+	/* Remove 4px gap between <li> */
+	font-size: 0;
+}
+
+.drawer li {
+	pointer-events: none;
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	list-style: none;
+	line-height: 100%;
+	transform: translateZ(0);
+}
+
+.drawer a {
+	pointer-events: auto;
+	position: relative;
+	display: block;
+	min-width: 2em;
+	margin-bottom: .4em;
+	padding: .4em;
+	line-height: 100%;
+	/* Reset font-size */
+	font-size: 16px;
+	text-decoration: none;
+	color: white;
+	transition: background 0.3s;
+}
+
+.drawer a:active, .drawer a:focus {
+	background: #aaa;
+}
+
+.drawer i {
+	display: block;
+	margin-bottom: .2em;
+	font-size: 2em;
+}
+
+.drawer span {
+	font-size: .625em;
+	font-family: sans-serif;
+	text-transform: uppercase;
+}
+
+.drawer li:hover ul {
+	/* Open the fly-out menu */
+	transform: translateX(0);
+	background: #aaa;
+	/* Enable this if you wish to replicate hoverIntent */
+}
+
+.drawer>li {
+	display: block; /* Add a shadow to the top-level link */
+	/* Show the shadow when the link is hovered over */
+	/* Fly out menus */
+}
+
+.drawer>li>a {
+	background: #ccc;
+	opacity: 100;
+}
+
+.drawer>li:hover {
+	z-index: 100;
+}
+
+.drawer>li:hover a {
+	background: #aaa;
+}
+
+.drawer>li a:hover {
+	background: #00224A;
+	/* 	background: #CDC569; */
+}
+
+.drawer>li>a:after {
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 100%;
+	width: 4px;
+	opacity: 100;
+}
+
+.drawer>li:hover a:after {
+	opacity: 1;
+}
+
+.drawer>li ul {
+	position: absolute;
+	/* Stack below the top level */
+	z-index: -1;
+	top: 0;
+	left: 100%;
+	height: 100%;
+	width: auto;
+	white-space: nowrap;
+	/* Close the menus */
+	transform: translateX(-100%);
+	background: #aaa;
+	transition: 0.5s transform;
+}
+
+body, ul {
+	margin: 0;
+	padding: 0;
+}
+
+.node_name {
+	z-index: 100000001 !important;
+}
+
+/* Popup container */
+.popup {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+	visibility: hidden;
+	width: 303px;
+	background-color: #eee;
+	color: #fff;
+	text-align: center;
+	/*  border-radius: 6px; */
+	padding: 8px 0;
+	position: absolute;
+	bottom: -503px;
+	left: 10px;
+	height: 500px;
+	margin-left: -303px;
+	margin-top: -150px;
+	z-index: 10000002;
+	border-radius: 0 0 0 10px;
+	border: 0 0 0 1px;
+	border-left: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+}
+
+/* Popup arrow */
+/* .popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 80%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color:  transparent transparent #eee transparent   ;
+} */
+.popup .show {
+	visibility: visible;
+	-webkit-animation: fadeIn 1s;
+	animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@
+-webkit-keyframes fadeIn {
+	from {opacity: 0;
+}
+
+to {
+	opacity: 1;
+}
+
+}
+@
+keyframes fadeIn {
+	from {opacity: 0;
+}
+
+to {
+	opacity: 1;
+}
+
+}
+.numberCircle {
+	display: inline-block;
+	line-height: 0px;
+	border-radius: 50%;
+	border: 1px solid;
+	font-size: 10px;
+}
+
+.numberCircle span {
+	display: inline-block;
+	padding-top: 50%;
+	padding-bottom: 50%;
+	color: #E53A22;
+	margin-left: 4px;
+	margin-right: 4px;
+}
+
+.bordertable {
+	border-collapse: collapse;
+	padding: 3px;
+	width: 293px;
+}
+
+.bordercell {
+	border: 1px solid #ccc;
+	padding: 3px;
+}
