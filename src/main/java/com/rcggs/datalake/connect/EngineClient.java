@@ -98,6 +98,17 @@ public class EngineClient implements Job {
 						+ target.get("config").get("type").getTextValue();
 				key = key.toLowerCase().replaceAll("/+", "/");
 				logger.info("generating key for schema " + key);
+				
+				
+				
+				System.out.println("\nXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\n");
+				
+				System.out.println(source.get("config").toString());
+				System.out.println(target.get("config").toString());
+				
+				System.out.println("\nXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\n");
+				
+				
 				DatalakeContext.getJobDao().saveMetadata(key,
 						source.get("schema") != null ? source.get("schema").toString() : "",
 						source.get("config").toString(),

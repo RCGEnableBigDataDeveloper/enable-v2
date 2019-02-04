@@ -295,9 +295,9 @@ public class EncryptDecryptUtil {
 
 	public static void main(String[] args) throws InvalidKeyException, NoSuchAlgorithmException, NoSuchPaddingException, UnsupportedEncodingException, IllegalBlockSizeException,
 			BadPaddingException, IOException, ParserConfigurationException, SAXException {
-		String pwd = encrypt(System.getProperty("user.dir") + "/conf/datalake.key", "adminuser");
-		String decryptedPwd = decrypt(System.getProperty("user.dir") + "/conf/datalake.key","rGd3bl/dGQe64CRnzKwXcw==");
+		String pwd = encrypt(System.getProperty("user.dir") + "/conf/datalake.key", "_]m9&9Z=n}gg=GSm");
+		String decryptedPwd = decrypt(System.getProperty("user.dir") + "/conf/datalake.key","gG0iujtoFsjMoEsC7eDmvw==");
 		logger.info(pwd);
-		System.err.println(pwd);
+		//System.err.println(decryptedPwd);
 	}
 }

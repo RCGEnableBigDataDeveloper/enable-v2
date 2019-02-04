@@ -6,6 +6,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
+import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -78,9 +79,9 @@ public class SQLConnection extends AbstractDataLakeConnection implements DataLak
 			return String.format("jdbc:phoenix:%s:%s/%s", host, port, db);
 		case "as400":
 			if (null != properties)
-				return String.format("jdbc:as400://%s:%s/%s;%s", host, port, db, properties);
+				return String.format("jdbc:as400://%s", host);
 			else
-				return String.format("jdbc:as400://%s:%s/%s", host, port, db);
+				return String.format("jdbc:as400://%s", host);
 		case "sap":
 			return String.format("jdbc:sap://%s:%s/%s", host, port, db);
 		case "openedge":
@@ -93,6 +94,11 @@ public class SQLConnection extends AbstractDataLakeConnection implements DataLak
 			log.error("Invalid or unknown database type: " + type);
 		}
 		return null;
+	}
+	
+	public static void main(String[] args) {
+	String s = 	getUrl("as400", "MBPROD.reyesholdings.com;libraries=MBPROD", "9090", "PRDATA", null, null);
+	System.out.println(s);
 	}
 
 	public SQLConnection(ConnectionConfig config) throws Exception {
@@ -124,7 +130,21 @@ public class SQLConnection extends AbstractDataLakeConnection implements DataLak
 				String url = getUrl(config.getType(), config.getHost(), config.getPort(), config.getPath(),
 						driverProperties, connectionTypes);
 
+				System.err.println("AS400 URL IS : \n" + url);
+				System.err.println(config.getUser() + " : " + config.getPwd());
+				
+				
+				//	E1GLOBALB : E1GL0B@L81
+
+
 				connection = DriverManager.getConnection(url, config.getUser(), config.getPwd());
+
+				// Class.forName("com.ibm.as400.access.AS400JDBCDriver");
+				// connection =
+				// DriverManager.getConnection("jdbc:as400://MBPROD.reyesholdings.com;libraries=MBPROD",
+												//jdbc:as400://MBPROD.reyesholdings.com;libraries=MBPROD
+				                                
+				// "E1GLOBALBI", "E1GL0B@L81");
 			}
 
 		} catch (SQLException e) {
